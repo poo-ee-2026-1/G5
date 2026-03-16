@@ -4,7 +4,7 @@
 Um rastreador facial que traduz a face humana para um modelo 3D através da câmera.
 
 # Integrantes
-Gustavo de Castro e João Philipe de Alcântara e Silva.
+Gustavo de Castro Rodrigues e João Philipe de Alcântara e Silva.
 
 # Objetivo
 Nosso objetivo é criar um programa que seja capaz de facilitar a modelagem da movimentação facial em um objeto 3D através de pontos específicos da face humana.
