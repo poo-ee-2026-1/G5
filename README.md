@@ -10,21 +10,20 @@ Gustavo de Castro Rodrigues e João Philipe de Alcântara e Silva.
 Criar um programa que consiga contabilizar a quantidade de pessoas somando as entradas e subtraindo as saídas de modo a ter controle do limite de pessoas permitido.
 
 # Método
-Através de um programa que se lembre do número de pessoas presentes e que possa, quando uma pessoa entrar, somar +1 à esse número ou subtrair -1, caso alguém saia, e que, ao mesmo tempo, impeça a entrada de mais pessoas após atingir o númeero limite.
+Através de um programa que se lembre do número de pessoas presentes e que possa, quando uma pessoa entrar, somar +1 à esse número ou subtrair -1, caso alguém saia, e que, ao mesmo tempo, impeça a entrada de mais pessoas após atingir o número limite.
 
 # Motivo
-
+Este projeto foi escolhido por representar um problema recorrente na rotina de muitas pessoas, que é o controle de vagas em estacionamentos. A proposta facilita a compreensão de como a programação pode ser aplicada para resolver situações presentes no nosso cotidiano.
 
 # Cronograma
 23/03 - Apresentar a proposta.
 
 06/04 - Apresentar um código que seja capaz de se lembrar de um número.
 
-20/04 - Apresentar um código que possa somar ou subtrair 1 ao número apartir de um imput.
+20/04 - Apresentar um código que possa somar ou subtrair 1 ao número a partir de um imput.
 
 04/05 - Apresentar o codigo final.
 
 18/05 - Correção de erros.
 
-01/06 - Seminário
-
+01/06 - Seminário.
