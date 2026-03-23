@@ -1,0 +1,8 @@
+#Como um cpf é criado
+
+8 Primeiros digitos - Números aleatórios
+9° digito - Indicador regional - 1: DF, GO, MT, MS e TO; 2: AC, AM, AP, PA, RO e RR 3: CE, MA e PI; 4: AL, PB, PE e RN; 5: BA e SE; 6: MG; 7: ES e RJ; 8: SP; 9: PR e SC; 0: RS
+10° digito - 1º Verificador - Multiplique os 9 primeiros dígitos por pesos decrescentes de 10 a 2 Some todos os produtos. Calcule o resto da divisão dessa soma por 11. Se o resto for menor que 2, o primeiro dígito é 0. Caso contrário, o dígito é 11 - resto)
+Segundo Dígito (11º número):
+Utilize os 9 primeiros dígitos + o primeiro dígito verificador calculado.
+Multiplique esses 10 dígitos por pesos decrescentes de 11 a 2. Some os produtos e calcule o resto da divisão por 11. Se o resto for menor que 2, o segundo dígito é 0. Caso contrário, o dígito é 11 - resto.
