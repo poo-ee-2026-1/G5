@@ -1,7 +1,7 @@
 # G5
 
 # Controle de Acesso
-Um programa que consegue controlar a entrada e saída de pessoas ao mesmo tempo que imoede a entrada após ultrapassar o limite de pessoas permitido.
+Um programa que consegue controlar a entrada e saída de pessoas ao mesmo tempo que impede a entrada após ultrapassar o limite de pessoas permitido.
 
 # Integrantes
 Gustavo de Castro Rodrigues e João Philipe de Alcântara e Silva.
