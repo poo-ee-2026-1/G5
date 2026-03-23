@@ -28,15 +28,15 @@ Pior isso, pensamos em criar um programa que, ao invés de utilizar o face-track
 # Cronograma
 16/03 - Definir a plataforma a ser utilizada para escrever o código
 
-xx/xx - Criar um código base capaz de acessar a câmera
+23/03 - Criar um código base capaz de acessar a câmera
 
-xx/xx - Criar um modelo 3D do corpo humano
+06/04 - Criar um modelo 3D do corpo humano
 
-xx/xx - Criar um código capaz de acessar o modelo 3D
+20/04 - Criar um código capaz de acessar o modelo 3D
 
-xx/xx - Juntar os códigos através de um que seja capaz de copiar a face para o modelo
+04/05 - Juntar os códigos através de um que seja capaz de copiar a face para o modelo
 
-xx/xx - Fase de testes
+18/05 - Fase de testes
 
 xx/xx - Rascunho da apresentação
 
