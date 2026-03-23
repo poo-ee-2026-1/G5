@@ -20,7 +20,7 @@ Este projeto foi escolhido por representar um problema recorrente na rotina de m
 
 06/04 - Apresentar um código que seja capaz de adcionar ou subtrair 1.
 
-20/04 - Criar uma bliblioteca de CPFs (Uso de CPFs aleatórios).
+20/04 - Criar um gerador de CPFs.
 
 04/05 - Criar um código que consiga bloquear CPFs repetidos.
 
