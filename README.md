@@ -18,12 +18,12 @@ Este projeto foi escolhido por representar um problema recorrente na rotina de m
 # Cronograma
 23/03 - Apresentar a proposta.
 
-06/04 - Apresentar um código que seja capaz de se lembrar de um número.
+06/04 - Apresentar um código que seja capaz de adcionar ou subtrair 1.
 
-20/04 - Apresentar um código que possa somar ou subtrair 1 ao número a partir de um imput.
+20/04 - Criar uma bliblioteca de CPFs (Uso de CPFs aleatórios).
 
-04/05 - Apresentar o codigo final.
+04/05 - Crirar um código que consiga bloquear CPFs repetidos.
 
-18/05 - Correção de erros.
+18/05 - Criar uma Block List e lista de espera por prioridade.
 
 01/06 - Seminário.
