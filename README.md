@@ -13,7 +13,7 @@ Criar um programa que consiga contabilizar a quantidade de pessoas somando as en
 Através de um programa que se lembre do número de pessoas presentes e que possa, quando uma pessoa entrar, somar +1 à esse número ou subtrair -1, caso alguém saia, e que, ao mesmo tempo, impeça a entrada de mais pessoas após atingir o número limite.
 
 # Motivo
-Este projeto foi escolhido por representar um problema recorrente na rotina de muitas pessoas, que é o controle de vagas em estacionamentos. A proposta facilita a compreensão de como a programação pode ser aplicada para resolver situações presentes no nosso cotidiano.
+Este projeto foi escolhido por representar um problema recorrente na rotina de muitas pessoas, que é o controle de vagas em estacionamentos. A proposta facilita a compreensão de como a programação orientada a objetos pode ser aplicada para resolver situações presentes no nosso cotidiano, aumentando a segurança e otimizando o rodízio de vagas do estabelecimento.
 
 # Cronograma
 23/03 - Apresentar a proposta.
@@ -22,7 +22,7 @@ Este projeto foi escolhido por representar um problema recorrente na rotina de m
 
 20/04 - Criar uma bliblioteca de CPFs (Uso de CPFs aleatórios).
 
-04/05 - Crirar um código que consiga bloquear CPFs repetidos.
+04/05 - Criar um código que consiga bloquear CPFs repetidos.
 
 18/05 - Criar uma Block List e lista de espera por prioridade.
 
