@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=GeradorCPF
+comment1.params=
+comment1.target=GeradorCPF()
+comment2.params=num\ pesoMax
+comment2.target=int\ calcularDigito(int[],\ int)
+comment3.params=
+comment3.target=java.lang.String\ getCpf()
+numComments=4
