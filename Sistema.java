@@ -1,21 +1,18 @@
 import java.util.Scanner;
-import java.util.ArrayList;
 
 public class Sistema {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        Gerenciador gerenciador = new Gerenciador();
         int contador = 0;
-        ArrayList<String> cpfsAutorizados = new ArrayList<>();
         
         // Definimos o limite máximo aqui
-        final int LIMITE_MAXIMO = 45;
 
         while (true) {
-            System.out.println("\nVALOR ATUAL: " + contador);
-            System.out.println("ESPAÇOS OCUPADOS: " + cpfsAutorizados.size() + "/" + LIMITE_MAXIMO);
-            System.out.println("CPFs NA LISTA: " + (cpfsAutorizados.isEmpty() ? "[VAZIA]" : cpfsAutorizados));
-            System.out.println("1 - Somar 1 (Gera novo CPF)");
-            System.out.println("2 - Subtrair 1 (Usa CPF da lista)");
+            System.out.println("\n[ Valor Atual: " + contador + " ]");
+            System.out.println("1 - Entrada (Gerar CPF)");
+            System.out.println("2 - Saída (Usar CPF)");
+            System.out.println("3 - Visualizar lista de presentes"); // NOVO CASE
             System.out.println("0 - Sair");
             System.out.print("Escolha: ");
             
@@ -24,50 +21,46 @@ public class Sistema {
 
             switch (opcao) {
                 case 1:
-                    // Verificação de limite
-                    if (cpfsAutorizados.size() >= LIMITE_MAXIMO) {
-                        System.out.println(">>> ERRO: Limite de " + LIMITE_MAXIMO + " CPFs atingido! Remova um para continuar.");
+                    if (gerenciador.totalAtivo() >= gerenciador.getLimite()) {
+                        System.out.println(">>> Erro: Limite atingido!");
                     } else {
-                        GeradorCPF novo = new GeradorCPF();
-                        String novoCpf = novo.getCpf();
-                        System.out.println("\nNOVO CPF GERADO: " + novoCpf);
-                        System.out.print("Confirme o CPF para somar: ");
-                        System.out.println("CPF deve ser digitado na forma XXX.XXX.XXX-XX");
-                        if (scanner.nextLine().equals(novoCpf)) {
+                        GeradorCPF novo = new GeradorCPF(); // Usa a classe que criamos antes
+                        String cpfGerado = novo.getCpf();
+                        System.out.println("\nCPF GERADO: " + cpfGerado);
+                        System.out.print("Confirme: ");
+                        if (scanner.nextLine().equals(cpfGerado)) {
                             contador++;
-                            cpfsAutorizados.add(novoCpf);
-                            System.out.println(">>> SOMA REALIZADA!");
-                        } else {
-                            System.out.println(">>> ERRO: CPF incorreto.");
+                            gerenciador.adicionar(cpfGerado);
+                            System.out.println(">>> Entrada efetuada!");
                         }
                     }
                     break;
 
                 case 2:
-                    if (cpfsAutorizados.isEmpty()) {
-                        System.out.println(">>> ERRO: Nenhum CPF disponível para subtrair.");
+                    System.out.print("Digite o CPF para subtrair: ");
+                    if (gerenciador.remover(scanner.nextLine())) {
+                        contador--;
+                        System.out.println(">>> Saída efetuada!");
                     } else {
-                        System.out.print("Digite um CPF da lista para usar: ");
-                        System.out.println("CPF deve ser digitado na forma XXX.XXX.XXX-XX");
-                        String tentativa = scanner.nextLine();
-                        
-                        // O método .remove() retorna 'true' se encontrou e removeu o item
-                        if (cpfsAutorizados.remove(tentativa)) {
-                            contador--;
-                            System.out.println(">>> SUBTRAÇÃO REALIZADA! Chave utilizada e descartada.");
-                        } else {
-                            System.out.println(">>> ACESSO NEGADO: Chave inválida ou já utilizada.");
+                        System.out.println(">>> Erro: CPF não autorizado ou já usado.");
+                    }
+                    break;
+
+                case 3: // EXIBIÇÃO DA LISTA
+                    System.out.println("\n--- LISTA DE CPFs AUTORIZADOS ---");
+                    if (gerenciador.estaVazia()) {
+                        System.out.println("Nenhum CPF armazenado no momento.");
+                    } else {
+                        for (int i = 0; i < gerenciador.getLista().size(); i++) {
+                            System.out.println((i + 1) + ". " + gerenciador.getLista().get(i));
                         }
                     }
+                    System.out.println("---------------------------------");
                     break;
 
                 case 0:
                     System.out.println("Encerrando...");
-                    scanner.close();
                     return;
-
-                default:
-                    System.out.println("Opção inválida.");
             }
         }
     }
