@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ListaEspera
+comment1.params=cpf
+comment1.target=void\ entrar(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ sair()
+comment3.params=
+comment3.target=boolean\ temAlguem()
+comment4.params=
+comment4.target=int\ tamanho()
+comment5.params=
+comment5.target=java.util.Queue\ getFila()
+numComments=6

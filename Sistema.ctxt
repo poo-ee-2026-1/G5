@@ -2,4 +2,6 @@
 comment0.target=Sistema
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-numComments=2
+comment2.params=cpf\ g\ e\ b\ silencioso
+comment2.target=boolean\ processarEntrada(java.lang.String,\ GerenciadorAtivo,\ ListaEspera,\ ListaNegra,\ boolean)
+numComments=3

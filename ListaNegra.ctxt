@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=ListaNegra
+comment1.params=
+comment1.target=ListaNegra()
+comment2.params=cpf
+comment2.target=void\ bloquear(java.lang.String)
+comment3.params=cpf
+comment3.target=boolean\ estaBloqueado(java.lang.String)
+comment4.params=
+comment4.target=java.util.ArrayList\ getLista()
+numComments=5
