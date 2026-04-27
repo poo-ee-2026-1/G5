@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
 public class Sistema {
+    public static boolean existeNoSistema(String cpf, GerenciadorAtivo g, ListaEspera f) {
+        return g.getAtivos().contains(cpf) || f.getFila().contains(cpf);
+    }
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         GerenciadorAtivo gerenciador = new GerenciadorAtivo();
